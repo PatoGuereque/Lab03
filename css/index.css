@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo > img {
+  width: 50px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  height: 71px;
+  background-color: gray;
+  color: white;
+}
+
+.hamburger {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  font-size: xx-large;
+}
+
+.menu {
+  display: flex;
+  align-content: center;
+  list-style: none;
+  display: none;
+  padding-right: 10px;
+}
+
+.menu > li {
+  padding: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding-top: 10px;
+  border-top: 1px solid gray;
+}
+
+/* TABLETS */
+@media screen and (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .logo {
+    padding-right: 15px;
+  }
+}
+
+
+/* BIG SCREEN */
+@media screen and (min-width: 1025px) {
+  main {
+    flex-direction: row;
+  }
+
+  .product {
+    width: 33.3%;
+  }
+  
+  .hamburger {
+    display: none;
+  }
+
+  .menu {
+    display: inherit;
+  }
+}
